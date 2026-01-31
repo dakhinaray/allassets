@@ -90,7 +90,7 @@ function fetch_top_banner_promotions(page = 1, params = {}) {
                 
                 html += `                        
                         <a href="${promoUrl}" target="_blank" rel="noopener noreferrer" aria-label="View details for Big Data, Smart Computing and Computer Science Conference" class="block group bg-white dark:bg-darkCard rounded-md shadow-md border-2 border-gray-600 dark:border-gray-700  hover:border-accent transition-shadow duration-300 ease-in-out overflow-hidden flex-shrink-0 w-11/12 sm:w-3/4 md:w-auto snap-center first:ml-6 last:mr-6 md:first:ml-0 md:last:mr-0">
-                    <img src="${imgSrc}" alt="${promo.alt ?? 'Promotion'}" class="h-42 w-full object-cover transition-transform duration-300">
+                    <img src="${imgSrc}" alt="${promo.alt ?? 'Promotion'}" class="w-full h-32 sm:h-40 md:h-48 object-cover transition-transform duration-300">
                 </a>
                     `;
             });
@@ -530,4 +530,5 @@ function setupSlider() {
     slider.addEventListener('mouseleave', startAutoplay);
 
     initializeSlider();
+
 }
